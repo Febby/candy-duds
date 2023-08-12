@@ -1,3 +1,7 @@
+# What is Candy Duds
+
+A web-based replication of the renowned Candy App, meticulously crafted to showcase pop-ups and special offers. This project was built using a modern tech stack, including React for dynamic UI components, Tailwind for utility-first styling, and Styled Components for component-specific styles. To ensure a seamless user experience, I integrated Cypress for end-to-end testing, validating the application's functionality and responsiveness. 
+
 # Getting Started with Candy Duds
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
