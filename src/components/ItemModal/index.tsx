@@ -11,6 +11,7 @@ import ModalHeader from '../Modal/ModalHeader';
 import ModalBody from '../Modal/ModalBody';
 import ModalFooter from '../Modal/ModalFooter';
 import Button from '../Button/Button';
+import OfferImage from '../OfferImage/OfferImage';
 import { Offer, OffersResponse } from '../../types/offer';
 import Skeleton from '../Loader/Skeleton';
 
@@ -80,11 +81,12 @@ const ItemsModal: React.FC<ItemsModalProps> = ({ setShowModal }) => {
           {!isLoading && offers.map((offer, index) => {
             return (
               <div className="flex items-center h-20 mb-8" key={index}>
-                <img
+                {/* <img
                   alt=""
                   src={offer.image}
                   className="object-cover bg-gray-100 h-16 w-16"
-                />
+                /> */}
+                <OfferImage src={offer.image} alt={offer.title} offerTitle={offer.title} />
                 <div className="mx-4 w-full">
                   <div className="flex items-center">
                     <div className="font-bold">{offer.title}</div>
